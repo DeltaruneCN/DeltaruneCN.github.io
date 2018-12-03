@@ -227,7 +227,7 @@ a {
 @media screen and (max-width: 760px) {
   .footer {
     text-align: center;
-    background-color: #000;
+    background-color: #222;
     margin-top: 0px;
     padding: 20px;
     color: #FFF;
@@ -236,7 +236,7 @@ a {
 @media screen and (max-width: 360px) {
   .footer {
     text-align: center;
-    background-color: #000;
+    background-color: #222;
     margin-top: 0px;
     padding: 20px;
     color: #FFF;
