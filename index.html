@@ -41,18 +41,7 @@
   
 </script>
 <!-- End Google Analytics -->
-<script type="text/javascript">
-    var system ={};
-        var p = navigator.platform;
-       system.win = p.indexOf("Win") == 0;
-       system.mac = p.indexOf("Mac") == 0;
-       system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-       if(system.win||system.mac||system.xll){//如果是电脑跳转到
-               window.location.href="#";
-       }else{  //如果是手机,跳转到
-              window.location.href="/archives/1";
-       }
-</script>
+
 
 </head>
 </html>
@@ -83,7 +72,18 @@
 
 
 
-
+<script type="text/javascript">
+var system ={};
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+				system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        if(system.win||system.mac||system.xll){//如果是电脑跳转到
+        window.location.href="#";
+        }else{  //如果是手机,跳转到
+        window.location.href="/archives/1";
+						        }
+</script>
 <style type="text/css">
 
 </style>
@@ -95,7 +95,7 @@
 <br>
 
 <div>
-	<a href="http://pklopds21.bkt.clouddn.com/DeltaruneSetup.exe">
+	<a href="http://pkmzchm3v.bkt.clouddn.com/DeltaruneSetup.exe">
 <img height="auto" width="auto" src="/image/download_link.png" onmouseover="this.src='/image/download_link1.png'" onmouseout="this.src='/image/download_link.png'">
   </a>
 </div>
@@ -120,7 +120,7 @@
   <div>
     <div class="footer-info">
         <div>Powered by <a href="https://pcc-studio.coding.me" target="_blank">PCC-Studio</a> & <a href="/" target="_blank">KillMasterAGS</a></div>
-        <div>Copyright &copy; 2018, <a href="/">DeltaruneCN</a>  . All rights reserved .</div>
+        <div>Copyright &copy; 2019, <a href="/">DeltaruneCN</a>  . All rights reserved .</div>
       </div>
   </div>
 </footer>
