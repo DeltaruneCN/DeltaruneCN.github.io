@@ -19,10 +19,10 @@ img {
 }
 
 @font-face {
-	font-family: "NotoSansCJK";
-	src: local('NotoSansCJK Thin'),
-		local('NotoSansCJK-Thin'),
-		url("/assets/fonts/NotoSansCJK-Thin.ttf") format("truetype");
+	font-family: "FZXS";
+	src: local('FZXS'),
+		local('FZXS'),
+		url("/assets/fonts/FZXS.ttf") format("truetype");
 	font-weight: 200
 }
 
@@ -63,7 +63,7 @@ body {
 	background-color: black;
 	margin-bottom: 60px;
 	color: #ffffff;
-	font-family: "NotoSansCJK", monospace;
+	font-family: "FZXS", monospace;
 	font-weight: 700
 }
 
@@ -867,7 +867,7 @@ footer a {
 #troubleshooting .answer:before,
 #contact .answer:before {
 	content: 'A: ';
-	font-family: monospace;
+	font-family: FZXS, monospace;
 }
 
 footer {
