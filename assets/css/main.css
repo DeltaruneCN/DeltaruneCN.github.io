@@ -19,22 +19,6 @@ img {
 }
 
 @font-face {
-	font-family: "FZXS";
-	src: local('FZXS'),
-		local('FZXS'),
-		url("/assets/fonts/FZXS.ttf") format("truetype");
-	font-weight: 200
-}
-
-@font-face {
-	font-family: "NotoSansCJK";
-	src: local('NotoSansCJK Light'),
-		local('NotoSansCJK-Light'),
-		url("/assets/fonts/NotoSansCJK-Light.ttf") format("truetype");
-	font-weight: 300
-}
-
-@font-face {
 	font-family: "NotoSansCJK";
 	src: local('NotoSansCJK Regular'),
 		local('NotoSansCJK-Regular'),
@@ -58,12 +42,55 @@ img {
 	font-weight: 700
 }
 
+@font-face {
+	font-family: "JF-Dot-Shinonome14";
+	src: local('JF-Dot-Shinonome14'),
+		local('JF-Dot-Shinonome14'),
+		url("/assets/fonts/JF-Dot-Shinonome14.ttf") format("truetype");
+	font-weight: 700
+}
+
+@font-face {
+	font-family: "Zpix";
+	src: local('Zpix'),
+		local('Zpix'),
+		url("/assets/fonts/Zpix.ttf") format("truetype");
+	font-weight: 700
+}
+
+@font-face {
+	font-family: "8bitOperatorPlus";
+	src: local('8bitOperatorPlus-Regular'),
+		local('8bitOperatorPlus-Regular'),
+		url("/assets/fonts/8bitOperatorPlus-Regular.ttf") format("truetype");
+	font-weight: 700
+}
+
+/*
+@font-face {
+	font-family: "8bitOperatorPlus";
+	src: local('8bitOperatorPlus-Bold'),
+		local('8bitOperatorPlus-Bold'),
+		url("/assets/fonts/8bitOperatorPlus-Bold.otf") format("opentype");
+	font-weight: 400
+}
+*/
+
+@font-face {
+	font-family: "FZxiangsu";
+	src: local('8bitOperatorPlus-Regular'),
+		local('8bitOperatorPlus-Regular'),
+		url("/assets/fonts/FZxiangsu.ttf") format("truetype");
+	font-weight: 700
+}
 
 body {
 	background-color: black;
 	margin-bottom: 60px;
 	color: #ffffff;
-	font-family: "FZXS", monospace;
+	font-family:
+		/*"FZxiangsu", */
+		"Zpix", "NotoSansCJK", monospace;
 	font-weight: 700
 }
 
@@ -148,6 +175,7 @@ footer a {
 	text-shadow: 0 2px #000000;
 	font-size: 18px;
 	padding: 15px 0;
+	text-decoration: none;
 }
 
 .nav>li>a:hover,
@@ -802,7 +830,7 @@ footer a {
 #contact ul,
 #contact p {
 	font-size: 14px;
-	font-family: monospace;
+	font-family: "Zpix", "NotoSansCJK", monospace;
 }
 
 #faq .answer,
@@ -821,7 +849,7 @@ footer a {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	line-height: 1.4;
-	font-family: monospace;
+	font-family: "Zpix", "NotoSansCJK", monospace;
 }
 
 #faq .question,
@@ -860,14 +888,14 @@ footer a {
 #troubleshooting .question:before,
 #contact .question:before {
 	content: 'Q: ';
-	font-family: monospace;
+	font-family: "Zpix", "NotoSansCJK", monospace;
 }
 
 #faq .answer:before,
 #troubleshooting .answer:before,
 #contact .answer:before {
 	content: 'A: ';
-	font-family: FZXS, monospace;
+	font-family: "Zpix", "NotoSansCJK", monospace;
 }
 
 footer {
@@ -877,7 +905,7 @@ footer {
 
 footer .text {
 	font-size: 10px;
-	color: #474747;
+	color: #979797;
 }
 
 footer a {
@@ -888,7 +916,7 @@ footer a {
 
 
 footer .privacy a {
-	color: #474747;
+	color: #979797;
 	font-size: 10px;
 	text-decoration: none;
 }
