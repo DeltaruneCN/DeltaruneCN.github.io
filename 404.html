@@ -3,38 +3,54 @@
 
     <head>
         <meta charset="utf-8">
-        <title>404 Not Found | PCC-Studio</title>
-        <link rel="shortcut icon" href="/favicon.ico">
+        <title>404 Not Found | DeltaruneCN</title>
+        <link rel="shortcut icon" href="/favicon.png">
     </head>
+    <style>
+        body {
+            background-color: black;
+            margin-bottom: 60px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family:sans-serif, monospace;
+        }
+    </style>
 
     <body>
-        <div>
-            <div style="text-align: center">
+        <audio controls="controls" loop="loop" autoplay="true" hidden="hidden">
+            <source src="/assets/music/404.ogg" type="audio/ogg" />
+            <source src="/assets/music/404.mp3" type="audio/mpeg" />
+        </audio>
+        <div style="text-align: center">
+            <div>
                 <h1>404 Not Found</h1>
-                <hr>
-                <br />
                 <h2>
-                    <font color=#000><b>所访问的对应页面已被移动或删除或从未存在</b></font>
+                    <font color=#FFF><b>所访问的对应页面已被移动或删除或从未存在</b></font>
                 </h2>
+                <div><img id="404" height="200" width="200" src="/assets/images/404.1.png" alt="404" /></div>
                 <div>
-                    <div style="text-align: center">
-                        <b>您可以尝试通过以下方法来解决此问题</b>
-                        <br />
-                        <div style="line-height:5px;">
-                            <br />
-                        </div>
-                        返回<a href="javascript:history.go(-1);" target="_blank" rel="noopener">上一页</a>
-                        <span>&nbsp;|&nbsp;</span>
-                        转到<a href="/" target="_blank" rel="noopener">主页</a>
-                        <span>&nbsp;|&nbsp;</span>
-                        联系<a href="mailto:wsloth56@foxmail.com" title="wsloth56@foxmail.com" class="mail">管理员</a>
-                    </div>
-                    <br />
-                    <br />
-                    <hr>
+                    <div style="text-align: center"><b>您可以尝试返回<a href="/">主页</a>来解决此问题</b></div>
                 </div>
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+        window.onload = init;
+        var n = 1;
+        var dingshi;
+
+        function init() {
+            dingshi = window.setInterval("tupian()", 300);
+        }
+
+        function tupian() {
+            var obj = document.getElementById("404");
+            n++;
+            if (n > 2) {
+                n = 1;
+            }
+            obj.src = "/assets/images/404." + n + ".png";
+        }
+    </script>
 
 </html>
