@@ -873,14 +873,14 @@ footer a {
 #faq .trouble .issue:before,
 #troubleshooting .trouble .issue:before,
 #contact .trouble .issue:before {
-	content: 'Issue: ';
+	content: '问题: ';
 	color: #ff0000;
 }
 
 #faq .trouble .resolve:before,
 #troubleshooting .trouble .resolve:before,
 #contact .trouble .resolve:before {
-	content: 'Resolve: ';
+	content: '解决方案: ';
 	color: #00ff00;
 }
 
